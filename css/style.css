@@ -1,0 +1,236 @@
+*{
+    letter-spacing: 1.2px;
+    font-family: ui-monospace;
+    margin: auto;
+    font-weight: 800;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* container1 */
+#call{
+    border-radius: 14px;
+    color: black !important;
+    transition: width 2s ease-in-out;
+    display: fixed;
+}
+#call:hover{
+    scale: 1.1;
+}
+.container1 a:hover{
+    color: red !important;
+}
+.container1 a{
+    font-weight: bolder !important;
+}
+#information1{
+    text-align: end;
+    width: -webkit-fill-available;
+    font-weight: bolder !important;
+    animation: slide 2s 1 ;
+}
+.container1 .container #img img{
+    width: 100%;
+    transition: width 2s ease-in-out;
+    animation: pulse 2s infinite ;
+    opacity: 50%;
+}
+.container1 .container #img img:hover {
+    width: 120%;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform:  translateX(0%);
+    }
+}
+@media screen and (max-width: 790px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #information1{
+        margin-top: 20% !important; 
+        text-align: center;
+    }
+    .navbar span {
+        color: black;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container3 .serveseCard{
+        flex-direction: column;
+    }
+}
+.container1 #number{
+    text-align: center;
+    background-color: beige;
+    padding: 5% 8% 5% 8% ;
+    color: white;
+    background-color: #9546ab;
+    border-radius: 25px;
+    box-shadow: 2px 2px 19px 10px #00000087;
+    animation: color 2s infinite;
+
+
+}
+#number span {
+    font-size: xx-large;
+    font-weight: bold;
+    animation: pulsate 2s infinite;
+
+}
+#number p{
+    font-size: larger;
+    font-weight: 700;
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        color: red;
+    }
+    50% {
+        transform: scale(1.2);
+        color: rgb(166, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        color: red;
+    }
+}
+@keyframes color {
+    0% {
+        background-color: #9546ab;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: #9546ab;
+    }
+}
+/* container1 end  */
+
+
+/* container2 */
+.container2{
+    background-color: beige;
+    margin: 2px;
+    display: flex;
+}
+.container2 .whoiamImg{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.container2 .whoiamImg img{
+    width: -webkit-fill-available;
+}
+.whoiam,
+.whoiamImg {
+    flex-basis: 50%;
+    display: flex;
+}
+.container2 .whoiam{
+    background-color: beige;
+    text-align: center;
+}
+/* container2 */
+
+
+/* container3 */
+.container3{
+    padding: 100px;
+    text-align: center;
+}
+.container3 .serveseCard{
+    display: flex;
+}
+.container3 .serveseCard .card{
+    margin: 5px;
+    cursor: pointer;
+}
+/* container3 end */
+
+
+/* container4 */
+.container4 {
+    background-image: url(/img/cps5w60m.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 10%;
+}
+.container4 .send{
+    padding: 10%;
+    background-color: #fff9;
+}
+/* container4 */
+
+
+/* container5 */
+.container5{
+    padding: 10%;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+.container5 button{
+background-color: yellow;
+color: black;
+font-weight: 900;
+}
+.container5 h1{
+    line-height: 2;
+}
+/* container5 */
+
+
+/* container6 */
+.container6 footer{
+    background-color: black !important;
+    color: #fff !important;
+}
+
+/* container6 */
