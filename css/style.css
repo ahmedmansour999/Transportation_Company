@@ -1,5 +1,4 @@
 *{
-    letter-spacing: 1.2px;
     font-family: ui-monospace;
     margin: auto;
     font-weight: 800;
@@ -35,6 +34,27 @@
     transition: width 2s ease-in-out;
     display: fixed;
 }
+.callNow {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 999; /* Ensure the button is above other elements */
+}
+.callNow a {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.callNow a:hover {
+    background-color: #ff3333;
+}
+
 #call:hover{
     scale: 1.1;
 }
@@ -101,6 +121,11 @@
     .container3 .serveseCard{
         flex-direction: column;
     }
+    .callNow {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
 }
 .container1 #number{
     text-align: center;
@@ -148,6 +173,18 @@
     100% {
         background-color: #9546ab;
     }
+}
+
+.details{
+    display: flex;
+    background-color: #0000003b;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 18px;
+    width: max-content;
+}
+.details .left , .details .Right{
+    padding: 15px;
 }
 /* container1 end  */
 
