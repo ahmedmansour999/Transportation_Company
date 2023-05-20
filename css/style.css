@@ -40,6 +40,7 @@
     bottom: 20px; /* Adjust the distance from the bottom as needed */
     right: 20px; /* Adjust the distance from the right as needed */
     z-index: 999; /* Ensure the button is above other elements */
+    animation:  button-shadow 2s ease-in-out;
 }
 .callNow a {
     display: inline-block;
@@ -51,10 +52,32 @@
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    animation:  button-shadow 2s ease-in-out infinite;
 }
+
 .callNow a:hover {
     background-color: #ff3333;
 }
+@keyframes  button-shadow {
+    0%{
+        box-shadow: 2px 2px 20px 10px #efc90d;
+    }
+    25%{
+        box-shadow: 2px 2px 20px 10px #73ef0d;
+    }
+    50%{
+        box-shadow: 2px 2px 20px 10px #ef4d0ddc;
+    }
+    75%{
+        box-shadow: 2px 2px 20px 10px #f13a02;
+    }
+    100%{
+        box-shadow: 2px 2px 20px 10px #0dcdef;
+    }
+    
+    
+}
+
 
 #call:hover{
     scale: 1.1;
