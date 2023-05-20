@@ -61,18 +61,23 @@
 @keyframes  button-shadow {
     0%{
         box-shadow: 2px 2px 20px 10px #efc90d;
+        scale: 1;
     }
     25%{
         box-shadow: 2px 2px 20px 10px #73ef0d;
+        scale: 1.1;
     }
     50%{
         box-shadow: 2px 2px 20px 10px #ef4d0ddc;
+        scale: 1;
     }
     75%{
         box-shadow: 2px 2px 20px 10px #f13a02;
+        scale: 1.1;
     }
     100%{
         box-shadow: 2px 2px 20px 10px #0dcdef;
+        scale: 1;
     }
     
     
