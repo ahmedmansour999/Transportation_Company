@@ -2,6 +2,7 @@
     font-family: ui-monospace;
     margin: auto;
     font-weight: 800;
+
 }
 
 /* Color of the links BEFORE scroll */
@@ -175,17 +176,41 @@
     }
 }
 
-.details{
+.details {
     display: flex;
     background-color: #0000003b;
     padding-top: 5%;
     padding-bottom: 5%;
     font-size: 18px;
-    width: max-content;
-}
-.details .left , .details .Right{
+    width: -webkit-fill-available;
+
+  }
+  
+  .details .left,
+  .details .Right {
     padding: 15px;
-}
+    flex-basis: 50%;
+  }
+  
+  @media (max-width: 576px) {
+    .details {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        z-index: 999;
+        position: absolute;
+        top: 17%;
+        left: 1%;
+        width: -webkit-fill-available;
+    }
+    
+    .details .left,
+    .details .Right {
+      padding: 10px;
+    }
+    
+ 
+  }
 /* container1 end  */
 
 
@@ -217,7 +242,7 @@
 
 /* container3 */
 .container3{
-    padding: 100px;
+    padding: 10px;
     text-align: center;
 }
 .container3 .serveseCard{
