@@ -4,7 +4,9 @@
     font-weight: 800;
 
 }
-
+p{
+    font-size: 20;
+}
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler .fa-bars {
